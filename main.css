@@ -1,0 +1,39 @@
+.text-full,
+.text-half {
+  background-color: #04aa6d;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  padding: 3px;
+  margin-top: 5px;
+  text-align: center;
+  &:hover {
+    background-color: rgb(156, 156, 156);
+  }
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.fullPage {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url(1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.halfPage {
+  display: none;
+  width: 100%;
+  height: 50%;
+  background-image: url(1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

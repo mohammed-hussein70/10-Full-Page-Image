@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Page Image</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="text-full">
+      <p>Full Page Image</p>
+    </div>
+    <div class="text-half">
+      <p>Half Page Image</p>
+    </div>
+    <div class="fullPage"></div>
+    <div class="halfPage"></div>
+    <script>
+      let fullPageBtn = document.querySelector(".text-full");
+      let fullPage = document.querySelector(".fullPage");
+      let halfPageBtn = document.querySelector(".text-half");
+      let halfPage = document.querySelector(".halfPage");
+      fullPageBtn.onclick = function () {
+        fullPage.style.display = "block";
+        fullPageBtn.style.display = "none";
+        halfPageBtn.style.display = "none";
+      };
+      halfPageBtn.onclick = function () {
+        halfPage.style.display = "block";
+        fullPageBtn.style.display = "none";
+        halfPageBtn.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
